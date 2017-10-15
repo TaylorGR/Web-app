@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Board Games Addition</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="..\style.css" rel="stylesheet" type="text/css" />
+</head>
+<header>
+    <h1>Board games aficionados</h1>
+    <nav id="follow_me">
+        <ul>
+            <li><a href="Events.html">Weekly Calender</a>
+            </li>
+            <li><a>About Us</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <main>
+        <section class="form_page">
+            <img id="left_semcircle" src="..\half_circle_left.gif" alt="h2_semicircle_image">
+            <img id="right_semcircle" src="..\half_circle_right.gif" alt="h2_semicircle_image">
+            <h2>Board Games Addition Form</h2>
+        </section>
+        <table id="addition">
+            <form action='boardgame_add.php' method="post">
+                <tr>
+                    <td>Board game name</td>
+                    <td>
+                        <input name="Name" type="text" tabindex="2" title= required pattern="[A-Za-z0-9-: ]{1,100}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Position</td>
+                    <td>
+                        <input name="Position" type="text" tabindex="3" pattern="[A-Za-z0-9 ]{0,50}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Notes</td>
+                    <td>
+                        <input name="Notes" type="text" tabindex="4" placeholder ="Board game notes" pattern="[A-Za-z0-9.-:() ]{0,254}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </main>
+    <footer>
+        <p>Board games aficionados</p>
+        <p>1970-2015</p>
+    </footer>
+</body>
+
+</html>

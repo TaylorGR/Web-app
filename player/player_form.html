@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Member Form</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="..\style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<header>
+    <h1>Board games aficionados</h1>
+    <nav id="follow_me">
+        <ul>
+            <li><a href="Events.html">Weekly Calender</a>
+            </li>
+            <li><a>About Us</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <main>
+        <section class="form_page">
+            <img  id="left_semcircle" src="..\half_circle_left.gif" alt="h2_semicircle_image">
+            <img  id="right_semcircle" src="..\half_circle_right.gif" alt="h2_semicircle_image">
+            <h2 >Membership Form</h2>
+        </section>
+        <table>
+            <form action='player_add.php' method="post">
+                <tr>
+                    <td>First Name</td>
+                    <td>
+                        <input name="fName" type="text" tabindex="2" title= required pattern="[A-Z a-z]{1,}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td>
+                        <input name="lName" type="text" tabindex="3" required pattern="[A-Z a-z]{1,}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <input name="email" type="email" tabindex="4" required placeholder ="example@email.com" pattern="[A-Z a-z 0-9.]{1,}@{1}[A-Z a-z 0-9]{1,}[.]{1}.{1,}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td>
+                        <input name="phone" type="phone" tabindex="5" required placeholder="1234567" pattern="[0-9]{7,}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </main>
+    <footer>
+        <p>Board games aficionados</p>
+        <p>1970-2015</p>
+    </footer>
+</body>
+
+</html>
